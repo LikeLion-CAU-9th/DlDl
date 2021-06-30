@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from didi import clients
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('clients/', include(clients.urls)),
 ]
