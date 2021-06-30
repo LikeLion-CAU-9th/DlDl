@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>디자이너 상세</h1>
+
+    {% if info.cover_image %}
+        <img src = {{info.cover_image.url}} style="width: 100px;">
+    {% endif %}
+
+    <div>
+        <div>
+            {{info.name}}
+        </div>
+        <div>
+            {{info.get_personerity_pick_1_display}}
+            {{info.get_personerity_pick_2_display}}
+            {{info.get_personerity_pick_3_display}}
+        </div>
+        <div>
+            {{info.introduce}}
+        </div>
+        
+        <p><a href = "{% url 'portfolio_upload' %}">포트폴리오 업로드</a></p>
+    </div>
+
+    <hr>
+    <a href = "{% url 'designer_home' %}">디자이너 홈</a>
+
+
+    <!-- 포트폴리오 업로드 -->
+    
+
+
+</body>
+</html>
