@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.conf import settings
 from accounts.models import User
 
+
 class Enterprise(models.Model):
     # title, body, show, datetime, image
 
