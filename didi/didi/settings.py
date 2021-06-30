@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # 확장할때 모델을 추가해줌
-AUTH_USER_MODEL = 'accounts.CustomUser'
+AUTH_USER_MODEL = 'accounts.User'
 
 
 # Application definition
